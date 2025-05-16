@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/woman"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/woman"
+        android:supportsRtl="true"
+        android:theme="@style/RealTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".chatbot.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentationLayer.user.TheMainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/apikey" />
+
+        <activity
+            android:name=".presentationLayer.user.UserMainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_main" />
+        <activity android:name=".presentationLayer.commonView.Login" />
+        <activity
+            android:name=".presentationLayer.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RealTheme" parent="Theme.WomenSafety">
+        <item name="android:windowBackground">@color/white</item>
+    <item name="textAllCaps">false</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="curve_view">
+        <item name="cornerSizeTopRight">40sp</item>
+        <item name="cornerSizeTopLeft">40sp</item>
+    </style>
+
+    <style name="inputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="boxBackgroundColor">#FB91A5</item>
+        <item name="boxCornerRadiusBottomEnd">15sp</item>
+        <item name="boxCornerRadiusBottomStart">15sp</item>
+        <item name="boxCornerRadiusTopEnd">15sp</item>
+        <item name="boxCornerRadiusTopStart">15sp</item>
+        <item name="boxStrokeWidth">0sp</item>
+        <item name="boxStrokeWidthFocused">0sp</item>
+        <item name="hintEnabled">false</item>
+        <item name="startIconTint">@color/white</item>
+    </style>
+    <style name="edit">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">21sp</item>
+        <item name="android:paddingStart">45sp</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+    <style name="textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:layout_width">200sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/curve</item>
+    </style>
+</resources>
